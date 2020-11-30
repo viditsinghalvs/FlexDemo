@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE JboPackage SYSTEM "jbo_03_01.dtd">
+
+<JboPackage
+   Name="server"
+   SeparateXMLFiles="true"
+   PackageName="oracle.apps.xxon.om.gbw.schctl.server" >
+   <DesignTime>
+      <Attr Name="_ejbPackage" Value="false" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+   </DesignTime>
+   <Containee
+      Name="XXONGbwScheCtlAM"
+      FullName="oracle.apps.xxon.om.gbw.schctl.server.XXONGbwScheCtlAM"
+      ObjectType="AppModule" >
+   </Containee>
+   <Containee
+      Name="XXONGbwScheCtlResultVO"
+      FullName="oracle.apps.xxon.om.gbw.schctl.server.XXONGbwScheCtlResultVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="XXONGbwScheDuplicateCheckVO"
+      FullName="oracle.apps.xxon.om.gbw.schctl.server.XXONGbwScheDuplicateCheckVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="XXONGbwSearchValuesVO"
+      FullName="oracle.apps.xxon.om.gbw.schctl.server.XXONGbwSearchValuesVO"
+      ObjectType="ViewObject" >
+   </Containee>
+</JboPackage>

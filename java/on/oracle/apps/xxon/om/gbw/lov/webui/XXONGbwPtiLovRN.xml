@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oa:listOfValues version="10.1.3_" xml:lang="en-US" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:ui="http://xmlns.oracle.com/uix/ui" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header$" scope="/">
+   <ui:contents>
+      <oa:table name="XXONGbwPtiLovRN" id="XXONGbwPtiLovRN">
+         <ui:contents>
+            <oa:messageStyledText id="Pti" dataType="VARCHAR2" prompt="Pti" viewName="XXONGbwPtiLovVO1" viewAttr="Pti" maximumLength="240" queryable="true"/>
+            <oa:formValue id="InventoryItemId" dataType="NUMBER" prompt="InventoryItemId" viewName="XXONGbwPtiLovVO1" viewAttr="InventoryItemId"/>
+            <oa:messageStyledText id="Item" dataType="VARCHAR2" prompt="Item" viewName="XXONGbwPtiLovVO1" viewAttr="Item" maximumLength="40"/>
+         </ui:contents>
+      </oa:table>
+   </ui:contents>
+</oa:listOfValues>

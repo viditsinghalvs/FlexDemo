@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+
+<AppModule
+   Name="XXONGbwShippedOrdersAM"
+   ComponentClass="oracle.apps.xxon.om.gbw.shipord.server.XXONGbwShippedOrdersAMImpl" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+      <Attr Name="_deployType" Value="0" />
+   </DesignTime>
+   <ViewUsage
+      Name="XXONGbwCorpCodeLovVO1"
+      ViewObjectName="oracle.apps.xxon.om.gbw.lov.server.XXONGbwCorpCodeLovVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="XXONGbwCust5CodeLovVO1"
+      ViewObjectName="oracle.apps.xxon.om.gbw.lov.server.XXONGbwCust5CodeLovVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="XXONGbwOperatingUnitLovVO1"
+      ViewObjectName="oracle.apps.xxon.om.gbw.lov.server.XXONGbwOperatingUnitLovVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="XXONGbwDateRangeVO1"
+      ViewObjectName="oracle.apps.xxon.om.gbw.shipord.server.XXONGbwDateRangeVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="XXONGbwShippedOrdersVO1"
+      ViewObjectName="oracle.apps.xxon.om.gbw.shipord.server.XXONGbwShippedOrdersVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="XXONGbwRecordsDisplayVO1"
+      ViewObjectName="oracle.apps.xxon.om.gbw.baklogview.server.XXONGbwRecordsDisplayVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="XXONGbwPackageLovVO1"
+      ViewObjectName="oracle.apps.xxon.om.gbw.lov.server.XXONGbwPackageLovVO" >
+   </ViewUsage>
+</AppModule>

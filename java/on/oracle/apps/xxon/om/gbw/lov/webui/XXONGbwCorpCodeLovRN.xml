@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oa:listOfValues version="10.1.3_1305" xml:lang="en-US" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:ui="http://xmlns.oracle.com/uix/ui" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header$" scope="/">
+   <ui:contents>
+      <oa:table name="XXONGbwCorpCodeLovRN" id="XXONGbwCorpCodeLovVORN">
+         <ui:contents>
+            <oa:messageStyledText id="AccountNumber" dataType="VARCHAR2" prompt="CorpCode" viewName="XXONGbwCorpCodeLovVO1" viewAttr="AccountNumber" maximumLength="30" queryable="true"/>
+            <oa:formValue id="CustAccountId" dataType="NUMBER" prompt="CustAccountId" viewName="XXONGbwCorpCodeLovVO1" viewAttr="CustAccountId"/>
+         </ui:contents>
+      </oa:table>
+   </ui:contents>
+</oa:listOfValues>

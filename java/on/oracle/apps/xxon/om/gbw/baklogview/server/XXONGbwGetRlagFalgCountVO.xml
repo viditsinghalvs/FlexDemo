@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="XXONGbwGetRlagFalgCountVO"
+   BindingStyle="OracleName"
+   CustomQuery="true"
+   RowClass="oracle.apps.xxon.om.gbw.baklogview.server.XXONGbwGetRlagFalgCountVORowImpl"
+   ComponentClass="oracle.apps.xxon.om.gbw.baklogview.server.XXONGbwGetRlagFalgCountVOImpl"
+   UseGlueCode="false" >
+   <SQLQuery><![CDATA[
+SELECT   COUNT (OHS.RELEASED_FLAG) RELEASED_FLAG_COUNT
+  FROM   APPS.OE_ORDER_HOLDS_ALL HLD, 
+         APPS.OE_HOLD_SOURCES_ALL OHS
+ WHERE       1 = 1
+         AND OHS.HOLD_SOURCE_ID(+) = HLD.HOLD_SOURCE_ID
+         AND OHS.RELEASED_FLAG = 'N'
+         AND HLD.LINE_ID = :1
+   ]]></SQLQuery>
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_isExpertMode" Value="true" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll|VarAccess" />
+   </DesignTime>
+   <ViewAttribute
+      Name="ReleasedFlagCount"
+      IsPersistent="false"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      AliasName="RELEASED_FLAG_COUNT"
+      Expression="RELEASED_FLAG_COUNT"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </ViewAttribute>
+</ViewObject>

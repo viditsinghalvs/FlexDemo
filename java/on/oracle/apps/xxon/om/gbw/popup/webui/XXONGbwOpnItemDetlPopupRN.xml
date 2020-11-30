@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oa:header version="10.1.3_" xml:lang="en-US" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:ui="http://xmlns.oracle.com/uix/ui" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header$" scope="/" controllerClass="oracle.apps.xxon.om.gbw.popup.webui.XXONGbwOpnItemDetlPopupCO" amDefName="oracle.apps.xxon.om.gbw.popup.server.XXONGbwPopupAM" standalone="false">
+   <ui:contents>
+      <oa:contentContainer id="bodyContainer">
+         <ui:contents>
+            <oa:defaultSingleColumn id="region33" headerDisabled="true">
+               <ui:contents>
+                  <oa:messageStyledText id="Opn" dataType="VARCHAR2" prompt="OPN" viewName="XXONGbwOpnItemDetailsVO1" viewAttr="Opn" maximumLength="240" styleClass="OraDataText"/>
+                  <oa:messageStyledText id="ItemDescription" dataType="VARCHAR2" viewName="XXONGbwOpnItemDetailsVO1" viewAttr="ItemDescription" cellNoWrapFormat="true" prompt="Item Description" styleClass="OraDataText"/>
+                  <oa:messageStyledText id="ItemStatusDesc" dataType="VARCHAR2" viewName="XXONGbwOpnItemDetailsVO1" viewAttr="ItemStatusDesc" cellNoWrapFormat="true" prompt="Item Status Desc" styleClass="OraDataText"/>
+                  <oa:messageStyledText id="itemPlanner" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/itemplaner" viewName="XXONGbwOpnItemDetailsVO1" viewAttr="PlannerName" styleClass="OraDataText"/>
+               </ui:contents>
+            </oa:defaultSingleColumn>
+            <oa:defaultDoubleColumn id="region32" rendered="true" headerDisabled="true">
+               <ui:contents>
+                  <oa:messageStyledText id="LeadTime" dataType="NUMBER" prompt="Lead Time" viewName="XXONGbwOpnItemDetailsVO1" viewAttr="LeadTime" styleClass="OraDataText"/>
+                  <oa:messageStyledText id="MaxQuantityLeadTime" dataType="NUMBER" prompt="Max Quantity Lead Time" viewName="XXONGbwOpnItemDetailsVO1" viewAttr="MaxQuantityLeadTime" maximumLength="25" styleClass="OraDataText"/>
+                  <oa:messageStyledText id="Mpq" dataType="NUMBER" prompt="MPQ" viewName="XXONGbwOpnItemDetailsVO1" viewAttr="Mpq" styleClass="OraDataText"/>
+                  <oa:messageStyledText id="Pal" dataType="VARCHAR2" prompt="PAL" viewName="XXONGbwOpnItemDetailsVO1" viewAttr="Pal" maximumLength="240" styleClass="OraDataText"/>
+                  <oa:messageStyledText id="Soq" dataType="VARCHAR2" prompt="SOQ" viewName="XXONGbwOpnItemDetailsVO1" viewAttr="Soq" styleClass="OraDataText"/>
+                  <oa:messageStyledText id="Poq" dataType="VARCHAR2" viewName="XXONGbwOpnItemDetailsVO1" viewAttr="PackageGroupCode" styleClass="OraDataText" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/pkg"/>
+                  <oa:messageStyledText id="AgileLifeCycleStatus" dataType="VARCHAR2" prompt="Agile Life Cycle Status" viewName="XXONGbwOpnItemDetailsVO1" viewAttr="AgileLifeCycleStatus" maximumLength="240" styleClass="OraDataText"/>
+                  <oa:messageStyledText id="ItemStatusCode" dataType="VARCHAR2" prompt="Item Status Code" viewName="XXONGbwOpnItemDetailsVO1" viewAttr="ItemStatusCode" maximumLength="10" cellNoWrapFormat="true" styleClass="OraDataText"/>
+                  <oa:messageStyledText id="productCategory" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/productcategory" viewName="XXONGbwOpnItemDetailsVO1" viewAttr="ProductCategory" styleClass="OraDataText"/>
+               </ui:contents>
+            </oa:defaultDoubleColumn>
+         </ui:contents>
+      </oa:contentContainer>
+      <oa:button id="OkBtn" destination="javascript:top.closeit();" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/ok"/>
+   </ui:contents>
+</oa:header>

@@ -1,0 +1,410 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<page xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:ui="http://xmlns.oracle.com/uix/ui" version="10.1.3_" xml:lang="en-US" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header$">
+   <content>
+      <oa:pageLayout id="pageLayoutRN" windowTitle="Global Backlog View &amp; Reschedule" amDefName="oracle.apps.xxon.om.gbw.baklogview.server.XXONGbwBacklogViewAM" controllerClass="oracle.apps.xxon.om.gbw.baklogview.webui.XXONGbwBacklogViewRsdCO" title="Global Backlog View &amp; Reschedule">
+         <ui:corporateBranding>
+            <oa:image id="corporateBrandingImage" source="/OA_MEDIA/FNDSSCORP.gif"/>
+         </ui:corporateBranding>
+         <ui:contents>
+            <oa:rowLayout id="searchCriteriaRRN">
+               <ui:contents>
+                  <oa:messageComponentLayout id="searchCriteriaDDRN" rows="5" columns="3">
+                     <ui:contents>
+                        <oa:messageChoice id="DateRange" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/daterange" sortState="ascending" pickListViewDef="oracle.apps.xxon.om.gbw.shipord.server.XXONGbwDateRangeVO" pickListViewName="" pickListDispAttr="Meaning" pickListValAttr="LookupCode" allowBlankValue="true" defaultValue="" viewName="XXONGbwSearchCriteriaValuesVO1" viewAttr="DateRange"/>
+                        <oa:messageLovInput id="Opn" viewName="XXONGbwSearchCriteriaValuesVO1" viewAttr="Opn" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/opn" externalListOfValues="/oracle/apps/xxon/om/gbw/lov/webui/XXONGbwOpnLovRN">
+                           <lovMappings>
+                              <lovMap id="lovMap3" lovItem="Opn" resultTo="Opn" criteriaFrom="Opn"/>
+                           </lovMappings>
+                        </oa:messageLovInput>
+                        <oa:messageLovInput id="CorpCode" viewName="XXONGbwSearchCriteriaValuesVO1" viewAttr="CorpCode" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/accountcorp" externalListOfValues="/oracle/apps/xxon/om/gbw/lov/webui/XXONGbwCorpCodeLovRN">
+                           <lovMappings>
+                              <lovMap id="lovMap6" lovItem="AccountNumber" resultTo="CorpCode" criteriaFrom="CorpCode"/>
+                           </lovMappings>
+                        </oa:messageLovInput>
+                        <oa:messageLovInput id="cust5code" viewName="XXONGbwSearchCriteriaValuesVO1" viewAttr="Cust5Code" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/site" externalListOfValues="/oracle/apps/xxon/om/gbw/lov/webui/XXONGbwCust5CodeLovRN">
+                           <lovMappings>
+                              <lovMap id="lovMap5" lovItem="Cust5Code" resultTo="cust5code" criteriaFrom="cust5code"/>
+                           </lovMappings>
+                        </oa:messageLovInput>
+                        <oa:messageTextInput id="legacySo" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/legacyso" viewName="XXONGbwSearchCriteriaValuesVO1" viewAttr="legacySo"/>
+                        <oa:messageTextInput id="Pal" viewName="XXONGbwSearchCriteriaValuesVO1" viewAttr="Pal" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/pal"/>
+                        <oa:messageLovInput id="Pkg" viewName="XXONGbwSearchCriteriaValuesVO1" viewAttr="Pkg" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/pkg" externalListOfValues="/oracle/apps/xxon/om/gbw/lov/webui/XXONGbwPackageLovRN">
+                           <lovMappings>
+                              <lovMap id="lovMap4" lovItem="PkgCode" resultTo="Pkg" criteriaFrom="Pkg"/>
+                           </lovMappings>
+                        </oa:messageLovInput>
+                        <oa:messageTextInput id="orderNumber" viewName="XXONGbwSearchCriteriaValuesVO1" viewAttr="OrderNumber" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/ordernumber"/>
+                        <oa:messageLovInput id="coi" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/coi" viewName="XXONGbwSearchCriteriaValuesVO1" viewAttr="Coi" externalListOfValues="/oracle/apps/xxon/om/gbw/lov/webui/XXONGbwCorpCodeLovRN">
+                           <lovMappings>
+                              <lovMap id="lovMap9" lovItem="AccountNumber" resultTo="coi" criteriaFrom="coi"/>
+                           </lovMappings>
+                        </oa:messageLovInput>
+                        <oa:messageTextInput id="lineNum" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/legacyLineNumber" viewName="XXONGbwSearchCriteriaValuesVO1" viewAttr="lineNumber"/>
+                        <oa:messageLovInput id="DemandBank" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/demandbank" viewName="XXONGbwSearchCriteriaValuesVO1" viewAttr="DemandBank" externalListOfValues="/oracle/apps/xxon/om/gbw/lov/webui/XXONGbwDemandBankLovRN">
+                           <lovMappings>
+                              <lovMap id="lovMap8" lovItem="DemandBank" resultTo="DemandBank" criteriaFrom="DemandBank"/>
+                           </lovMappings>
+                        </oa:messageLovInput>
+                        <oa:messageLovInput id="opunit" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/opunit" viewName="XXONGbwSearchCriteriaValuesVO1" viewAttr="OpUnit" externalListOfValues="/oracle/apps/xxon/om/gbw/lov/webui/XXONGbwOperatingUnitLovRN">
+                           <lovMappings>
+                              <lovMap id="lovMap1" lovItem="OuName" resultTo="opunit" criteriaFrom="opunit" useForValidation="yes"/>
+                              <lovMap id="lovMap7" lovItem="OrganizationId" resultTo="SorgId" useForValidation="default"/>
+                           </lovMappings>
+                        </oa:messageLovInput>
+                        <oa:messageLovInput id="orderType" externalListOfValues="/oracle/apps/xxon/om/gbw/lov/webui/XXONGbwOmTransactionTypeLovRN" viewName="XXONGbwSearchCriteriaValuesVO1" viewAttr="OrderType" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/ordertype">
+                           <lovMappings>
+                              <lovMap id="lovMap11" lovItem="TransactionType" resultTo="orderType" criteriaFrom="orderType"/>
+                           </lovMappings>
+                        </oa:messageLovInput>
+                        <oa:messageTextInput id="PoNumber" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/poNumber" viewName="XXONGbwSearchCriteriaValuesVO1" viewAttr="PoNumber"/>
+                     </ui:contents>
+                  </oa:messageComponentLayout>
+                  <oa:defaultSingleColumn id="searchCriteriaDSRN" headerDisabled="true">
+                     <ui:contents>
+                        <oa:formValue id="SorgId" viewName="XXONGbwSearchCriteriaValuesVO1" viewAttr="OrgId"/>
+                     </ui:contents>
+                  </oa:defaultSingleColumn>
+               </ui:contents>
+            </oa:rowLayout>
+            <oa:flowLayout id="region7">
+               <ui:contents>
+                  <oa:spacer id="item223212" width="87"/>
+                  <oa:button id="SearchBtn" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/go" rendered="true" destination="">
+                     <ui:primaryClientAction>
+                        <ui:fireAction event="Go"/>
+                     </ui:primaryClientAction>
+                  </oa:button>
+                  <oa:button id="ClearBtn" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/clear"/>
+               </ui:contents>
+            </oa:flowLayout>
+            <oa:defaultDoubleColumn id="limitRN" text="Limit">
+               <ui:contents>
+                  <oa:messageCheckBox id="unscheduledDemands" checkedValue="Y" unCheckedValue="N" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/unscheduleddemands" viewName="XXONGbwSearchCriteriaValuesVO1" viewAttr="UnscheduledDemands">
+                     <ui:primaryClientAction>
+                        <ui:firePartialAction event="FilterRows" id="firePartialAction17"/>
+                     </ui:primaryClientAction>
+                  </oa:messageCheckBox>
+                  <oa:messageCheckBox id="mismatchedDemands" checkedValue="Y" unCheckedValue="N" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/mismatcheddemands" viewName="XXONGbwSearchCriteriaValuesVO1" viewAttr="MismatchedDemands">
+                     <ui:primaryClientAction>
+                        <ui:firePartialAction event="FilterRows" id="firePartialAction18"/>
+                     </ui:primaryClientAction>
+                  </oa:messageCheckBox>
+                  <oa:messageCheckBox id="ScheduledDemands" checkedValue="Y" unCheckedValue="N" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/ScheduledDemands" viewName="XXONGbwSearchCriteriaValuesVO1" viewAttr="ScheduledDemands">
+                     <ui:primaryClientAction>
+                        <ui:firePartialAction event="FilterRows" id="firePartialAction172"/>
+                     </ui:primaryClientAction>
+                  </oa:messageCheckBox>
+                  <oa:messageCheckBox id="ExcludeFr" checkedValue="Y" unCheckedValue="N" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/ExcludeFR" viewName="XXONGbwSearchCriteriaValuesVO1" viewAttr="ExcludeFr">
+                     <ui:primaryClientAction>
+                        <ui:firePartialAction event="FilterRows" id="firePartialAction171"/>
+                     </ui:primaryClientAction>
+                  </oa:messageCheckBox>
+               </ui:contents>
+            </oa:defaultDoubleColumn>
+            <oa:header id="ResultHRN" text="Search Result">
+               <ui:contents>
+                  <oa:advancedTable id="ResultAdvTabRN" viewName="XXONGbwBaklogViewResultVO1" width="100%" dirtyRowSortEnabled="true" blockSize="20">
+                     <ui:contents>
+                        <oa:column id="OPN" columnDataFormat="iconButtonFormat">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader13" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/opn"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageStyledText id="item13" popupId="OpnPopupRN" popupEnabled="true" popupRenderEvent="onHover" viewAttr="Opn"/>
+                              <oa:flowLayout id="region3">
+                                 <ui:contents>
+                                    <oa:popUp id="OpnPopupRN" popupType="ParameterizedPopup" popupRegion="/oracle/apps/xxon/om/gbw/popup/webui/XXONGbwOpnItemDetlPopupRN" popupTitle="Item Details" popupParameters="pInvItemId={@InventoryItemId}&amp;pOpn={@Opn}" height="300" width="500"/>
+                                 </ui:contents>
+                              </oa:flowLayout>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="corpcode" columnDataFormat="iconButtonFormat">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader121" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/accountcorp"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageStyledText id="item121" viewAttr="CustomerCode"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="custcd" columnDataFormat="iconButtonFormat">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader12" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/site"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageStyledText id="item12" viewAttr="Cust5Code" popupRenderEvent="onHover" popupEnabled="true" popupId="customerDetlPopup"/>
+                              <oa:flowLayout id="popupLayoutRN">
+                                 <ui:contents>
+                                    <oa:popUp id="customerDetlPopup" popupType="ParameterizedPopup" popupRegion="/oracle/apps/xxon/om/gbw/popup/webui/XXONGbwCustomerDetlPopupRN" popupTitle="Customer Details" height="300" width="500" popupParameters="pSiteUseCode={@SiteUseCode}&amp;pCust5Code={@Cust5Code}"/>
+                                 </ui:contents>
+                              </oa:flowLayout>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="orderHold" columnDataFormat="iconButtonFormat">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader10" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/orderhold"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:flowLayout id="region4">
+                                 <ui:contents>
+                                    <oa:popUp id="OrderDetlPopupRN" popupType="ParameterizedPopup" popupRegion="/oracle/apps/xxon/om/gbw/popup/webui/XXONGbwOrderHoldDetlPopupRN" popupParameters="pHeaderId={@HeaderId}&amp;pLineId={@LineId}" popupTitle="Order Hold Details" height="300" width="600"/>
+                                 </ui:contents>
+                              </oa:flowLayout>
+                              <oa:switcher id="region5" viewAttr="OrderHold">
+                                 <ui:case name="Y">
+                                    <oa:messageStyledText id="Y" viewAttr="OrderHold" popupId="OrderDetlPopupRN" popupRenderEvent="onHover" popupEnabled="true"/>
+                                 </ui:case>
+                                 <ui:case name="N">
+                                    <oa:messageStyledText id="N" viewAttr="OrderHold" popupId="OrderDetlPopupRN" popupRenderEvent="onHover" popupEnabled="true"/>
+                                 </ui:case>
+                              </oa:switcher>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="ordertype" columnDataFormat="iconButtonFormat">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader9" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/ordertype"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageStyledText id="item9" viewAttr="OrderType"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="demandType" columnDataFormat="iconButtonFormat" rendered="false">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader8" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/demandtype"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageStyledText id="item8" viewAttr="DemandType"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="LegacySO" columnDataFormat="iconButtonFormat">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader72" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/legacyso" sortState="no"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageTextInput id="LegacySo" viewAttr="LegacySo" readOnly="true" columns="12"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="legacySoNum">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="legacySoNumH" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/legacyLineNumber"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageStyledText id="legacySoNumI" viewAttr="LegacyLineNumber"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="column2">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader15214" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/poNumber"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageStyledText id="poNumber" viewAttr="PoNumber"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="orderNum" columnDataFormat="iconButtonFormat">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader7" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/orderNum" sortState="yes" initSortSeq="none"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageStyledText id="item7" viewAttr="OrderNumber" columns="12" destination=""/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="LineNumber" columnDataFormat="iconButtonFormat">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader71" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/linenumber" sortState="yes"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageStyledText id="item71" viewAttr="LineNumber"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="rd" columnDataFormat="iconButtonFormat" rendered="${oa.XXONGbwBaklogViewResultVO1.SadRdRender}">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader61" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/rd" sortState="no" initSortSeq="none"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageStyledText id="itemRD" viewAttr="Rd" dataType="DATE"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="rsd" columnDataFormat="iconButtonFormat">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader6" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/rsd" sortState="yes"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageTextInput id="itemRSD" viewAttr="Rsd" dataType="DATE" readOnly="true"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="ssd" columnDataFormat="iconButtonFormat" bandingShade="none" rendered="true">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader5" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/ssd" sortState="yes" initSortSeq="none"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageTextInput id="itemSSD" viewAttr="Ssd" dataType="DATE" readOnly="false" styleClass="CustomStyle1"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="sad" columnDataFormat="iconButtonFormat" rendered="${oa.XXONGbwBaklogViewResultVO1.SadRdRender}">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader51" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/sad" sortState="no"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageStyledText id="itemSAD" viewAttr="Sad" dataType="DATE"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="column1">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader15213" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/reschedulereason"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageLovInput id="rescheReasonLov" externalListOfValues="/oracle/apps/xxon/om/gbw/lov/webui/XXONGbwRescheReasonLovRN" viewAttr="RescheduleReason">
+                                 <lovMappings>
+                                    <lovMap id="lovMap12" lovItem="Meaning" resultTo="rescheReasonLov" criteriaFrom="rescheReasonLov" useForValidation="no"/>
+                                    <lovMap id="lovMap13" lovItem="ReasonCode" resultTo="reasonCode" useForValidation="no"/>
+                                 </lovMappings>
+                              </oa:messageLovInput>
+                              <oa:formValue id="reasonCode" viewAttr="reasonCode"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="SsdCount" columnDataFormat="iconButtonFormat">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="SsdCountSH" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/SsdResceduleCounter"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageStyledText id="SsdCountI" viewAttr="SsdResceduleCounter"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="Quantity" columnDataFormat="iconButtonFormat">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader3" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/quantity"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageTextInput id="item3" viewAttr="Quantity" columns="8" readOnly="true"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="CumulativeQty" columnDataFormat="iconButtonFormat">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader14" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/cumulativeqty"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageStyledText id="item222" viewAttr="CumulativeQuantity"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="peggingDetail" columnDataFormat="iconButtonFormat">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader2" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/peggingdetail"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageStyledText id="item2" viewAttr="PeggingDetail"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="productCayegory" columnDataFormat="iconButtonFormat" rendered="false">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader1" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/productcategory"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageStyledText id="item1" viewAttr="ProductCategory"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="MPDate" columnDataFormat="iconButtonFormat" rendered="false">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader15" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/mpdate"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageStyledText id="itemMpDate" viewAttr="MpDate" dataType="DATE"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="csr" columnDataFormat="iconButtonFormat">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader152" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/csr"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageStyledText id="item2232" viewAttr="Csr"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="splitflag" columnDataFormat="iconButtonFormat">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader1521" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/splitflag"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageStyledText id="item22321" viewAttr="SplitFlag"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="ItemPlaner" columnDataFormat="iconButtonFormat" rendered="${oa.XXONGbwBaklogViewResultVO1.isScaRender}">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader15211" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/itemplaner"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageStyledText id="item223211" viewAttr="ItemPlanner" rendered="true"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="SchedulingReturn" columnDataFormat="iconButtonFormat">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader151" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/schedulingreturn"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageStyledText id="item2231" viewAttr="SchedulingReturn"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="rOrderFlag" rendered="true">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader15212" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/rushOrderFlag"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageCheckBox id="rushOrderFlagItem" viewAttr="RushOrderFlag" checkedValue="Y" unCheckedValue="N" rendered="${oa.XXONGbwBaklogViewResultVO1.isRoCbRender}" readOnly="${oa.XXONGbwBaklogViewResultVO1.isRushOrdFlagReadOnly}"/>
+                              <oa:messageStyledText id="rushOrderFlagItem1" viewAttr="RushOrderFlag" rendered="${oa.XXONGbwBaklogViewResultVO1.isRoFlagRender}"/>
+                           </ui:contents>
+                        </oa:column>
+                     </ui:contents>
+                     <ui:tableSelection>
+                        <oa:multipleSelection id="multipleSelection1" viewAttr="select" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/select"/>
+                     </ui:tableSelection>
+                     <ui:tableActions>
+                        <oa:rowLayout id="RecordsDisplayRLRN">
+                           <ui:contents>
+                              <oa:button id="rsdssd" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/rsdssd">
+                                 <ui:primaryClientAction>
+                                    <ui:fireAction event="RSDeqSSD" id="fireAction1"/>
+                                 </ui:primaryClientAction>
+                              </oa:button>
+                              <oa:spacer id="item2211" width="5"/>
+                              <oa:button id="scherev" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/schrev">
+                                 <ui:primaryClientAction>
+                                    <ui:fireAction event="scheRev" id="fireAction2"/>
+                                 </ui:primaryClientAction>
+                              </oa:button>
+                              <oa:spacer id="item2212" width="5"/>
+                              <oa:button id="updateBtn" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/update">
+                                 <ui:primaryClientAction>
+                                    <ui:fireAction event="updateRecords" id="fireAction3"/>
+                                 </ui:primaryClientAction>
+                              </oa:button>
+                              <oa:spacer id="item22121" width="5"/>
+                              <oa:button id="exportBT" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/exportBtn">
+                                 <ui:primaryClientAction>
+                                    <ui:fireAction event="export" id="fireAction4"/>
+                                 </ui:primaryClientAction>
+                              </oa:button>
+                              <oa:spacer id="item223213" width="5"/>
+                              <oa:messageTextInput id="rowsField" prompt="No.of Rows per page" viewName="XXONGbwRecordsDisplayVO1" viewAttr="rowsToBeDisplayed" columns="4" dataType="NUMBER">
+                                 <ui:primaryClientAction>
+                                    <ui:firePartialAction event="rowsField" id="firePartialAction19"/>
+                                 </ui:primaryClientAction>
+                              </oa:messageTextInput>
+                              <oa:spacer id="item22" width="5"/>
+                              <oa:messageTextInput id="RcCount" viewName="XXONGbwRecordsDisplayVO1" viewAttr="recCount" styleClass="OraDataText" readOnly="true"/>
+                              <oa:button id="RecalculateBt" text="Recalculate" prompt="Recalculate" rendered="false" shortDesc="Recalculate Cumulative Qty">
+                                 <ui:primaryClientAction>
+                                    <ui:firePartialAction event="reCalCumQty"/>
+                                 </ui:primaryClientAction>
+                              </oa:button>
+                           </ui:contents>
+                        </oa:rowLayout>
+                     </ui:tableActions>
+                  </oa:advancedTable>
+               </ui:contents>
+            </oa:header>
+            <oa:pageButtonBar id="pageButtonBarRN">
+               <ui:contents>
+                  <oa:button id="cancelBtn" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/cancel" destination="OA.jsp?OAFunc=OAHOMEPAGE"/>
+               </ui:contents>
+            </oa:pageButtonBar>
+         </ui:contents>
+      </oa:pageLayout>
+   </content>
+</page>

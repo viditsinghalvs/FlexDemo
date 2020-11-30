@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE JboPackage SYSTEM "jbo_03_01.dtd">
+
+<JboPackage
+   Name="server"
+   SeparateXMLFiles="true"
+   PackageName="oracle.apps.xxon.om.gbw.audit.server" >
+   <DesignTime>
+      <Attr Name="_ejbPackage" Value="false" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+   </DesignTime>
+   <Containee
+      Name="XXONGbwAuditDetailRecDisVO"
+      FullName="oracle.apps.xxon.om.gbw.audit.server.XXONGbwAuditDetailRecDisVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="XXONGbwAuditHeaderVO"
+      FullName="oracle.apps.xxon.om.gbw.audit.server.XXONGbwAuditHeaderVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="XXOnGbwAuditRecordDisplayVO"
+      FullName="oracle.apps.xxon.om.gbw.audit.server.XXOnGbwAuditRecordDisplayVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="XXONGbwAuditResultVO"
+      FullName="oracle.apps.xxon.om.gbw.audit.server.XXONGbwAuditResultVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="XXONGbwOmAuditAM"
+      FullName="oracle.apps.xxon.om.gbw.audit.server.XXONGbwOmAuditAM"
+      ObjectType="AppModule" >
+   </Containee>
+   <Containee
+      Name="XXONGbwSearchValuesVO"
+      FullName="oracle.apps.xxon.om.gbw.audit.server.XXONGbwSearchValuesVO"
+      ObjectType="ViewObject" >
+   </Containee>
+</JboPackage>

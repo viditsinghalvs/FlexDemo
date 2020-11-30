@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="XXONGbwOrderTypeVO"
+   BindingStyle="OracleName"
+   CustomQuery="true"
+   RowClass="oracle.apps.xxon.om.gbw.chgord.server.XXONGbwOrderTypeVORowImpl"
+   ComponentClass="oracle.apps.xxon.om.gbw.chgord.server.XXONGbwOrderTypeVOImpl"
+   UseGlueCode="false" >
+   <SQLQuery><![CDATA[
+SELECT 
+       ffvt.description Order_Type      ,ffv.flex_value         
+  FROM fnd_flex_value_sets ffvs
+      ,fnd_flex_values     ffv
+      ,fnd_flex_values_tl  ffvt
+WHERE ffvs.flex_value_set_id = ffv.flex_value_set_id
+   AND ffv.flex_value_id = ffvt.flex_value_id
+   AND ffvt.language = userenv('LANG')
+   and ffv.ENABLED_FLAG = 'Y'
+   AND ffvs.flex_value_set_name = 'XXON_OM_SALES_ORDER_GROUP'
+   ]]></SQLQuery>
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_isExpertMode" Value="true" />
+      <Attr Name="_version" Value="10.1.3.41.57" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll|VarAccess" />
+   </DesignTime>
+   <ViewAttribute
+      Name="OrderType"
+      IsPersistent="false"
+      Precision="240"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="ORDER_TYPE"
+      Expression="ORDER_TYPE"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="240" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="FlexValue"
+      IsPersistent="false"
+      IsNotNull="true"
+      Precision="150"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="FLEX_VALUE"
+      Expression="FLEX_VALUE"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="150" />
+      </DesignTime>
+   </ViewAttribute>
+</ViewObject>

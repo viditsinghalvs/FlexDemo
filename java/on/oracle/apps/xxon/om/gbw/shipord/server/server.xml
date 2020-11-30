@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE JboPackage SYSTEM "jbo_03_01.dtd">
+
+<JboPackage
+   Name="server"
+   SeparateXMLFiles="true"
+   PackageName="oracle.apps.xxon.om.gbw.shipord.server" >
+   <DesignTime>
+      <Attr Name="_ejbPackage" Value="false" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+   </DesignTime>
+   <Containee
+      Name="XXONGbwDateRangeVO"
+      FullName="oracle.apps.xxon.om.gbw.shipord.server.XXONGbwDateRangeVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="XXONGbwShippedOrdersAM"
+      FullName="oracle.apps.xxon.om.gbw.shipord.server.XXONGbwShippedOrdersAM"
+      ObjectType="AppModule" >
+   </Containee>
+   <Containee
+      Name="XXONGbwShippedOrdersVO"
+      FullName="oracle.apps.xxon.om.gbw.shipord.server.XXONGbwShippedOrdersVO"
+      ObjectType="ViewObject" >
+   </Containee>
+</JboPackage>

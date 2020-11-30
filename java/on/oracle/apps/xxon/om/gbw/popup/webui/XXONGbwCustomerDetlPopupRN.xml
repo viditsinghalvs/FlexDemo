@@ -1,0 +1,28 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oa:header version="10.1.3_" xml:lang="en-US" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:ui="http://xmlns.oracle.com/uix/ui" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header$" scope="/" controllerClass="oracle.apps.xxon.om.gbw.popup.webui.XXONGbwCustomerDetlPopupCO" amDefName="oracle.apps.xxon.om.gbw.popup.server.XXONGbwPopupAM">
+   <ui:contents>
+      <oa:contentContainer id="custdetlContainer" width="100%">
+         <ui:contents>
+            <oa:defaultSingleColumn id="region1" headerDisabled="true">
+               <ui:contents>
+                  <oa:messageStyledText id="shiptoItem" prompt="Ship To" viewName="XXONGbwCustomerDetailsVO1" viewAttr="CustCode" styleClass="OraDataText"/>
+               </ui:contents>
+            </oa:defaultSingleColumn>
+            <oa:defaultDoubleColumn id="region2" headerDisabled="true">
+               <ui:contents>
+                  <oa:messageStyledText id="corpcodeItem" prompt="Corp Code :" viewName="XXONGbwCustomerDetailsVO1" viewAttr="CorpCode" styleClass="OraDataText"/>
+                  <oa:messageStyledText id="corpnameItem" prompt="Corp Name :" viewName="XXONGbwCustomerDetailsVO1" viewAttr="PartyName" styleClass="OraDataText"/>
+                  <oa:messageStyledText id="bizclassItem" prompt="Business Class :" viewName="XXONGbwCustomerDetailsVO1" viewAttr="CustomerClassCode" styleClass="OraDataText"/>
+                  <oa:messageStyledText id="ordtypeItem" prompt="Order Type :" viewName="XXONGbwCustomerDetailsVO1" viewAttr="OrderType" styleClass="OraDataText"/>
+                  <oa:messageStyledText id="pricelistItem" prompt="Price List :" viewName="XXONGbwCustomerDetailsVO1" viewAttr="PriceList" styleClass="OraDataText"/>
+                  <oa:messageStyledText id="partialshipItem" prompt="Partial Shipment :" viewName="XXONGbwCustomerDetailsVO1" viewAttr="CrdPartialShipmentFlag" styleClass="OraDataText"/>
+                  <oa:messageStyledText id="shipearlydaysItem" prompt="Ship Early Days :" viewName="XXONGbwCustomerDetailsVO1" viewAttr="ShipEarlyDays" styleClass="OraDataText"/>
+                  <oa:messageStyledText id="item1"/>
+                  <oa:messageStyledText id="transitTimedaysItem" prompt="Transit Time Days :" viewName="XXONGbwCustomerDetailsVO1" viewAttr="TransitTimeDays" styleClass="OraDataText"/>
+               </ui:contents>
+            </oa:defaultDoubleColumn>
+            <oa:button id="okBtn" text="OK" destination="javascript:top.closeit();" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/ok"/>
+         </ui:contents>
+      </oa:contentContainer>
+   </ui:contents>
+</oa:header>

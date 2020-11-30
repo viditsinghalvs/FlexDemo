@@ -1,0 +1,27 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig>
+   <AppModuleConfigBag>
+      <AppModuleConfig name="XxonGbwScheCtlAMLocal">
+         <DeployPlatform>LOCAL</DeployPlatform>
+         <JDBCName>R1224PRD</JDBCName>
+         <jbo.project>XXONOM</jbo.project>
+         <AppModuleJndiName>oracle.apps.xxon.om.gbw.schctl.server.XXONGbwScheCtlAM</AppModuleJndiName>
+         <java.naming.factory.initial>oracle.jbo.common.JboInitialContextFactory</java.naming.factory.initial>
+         <ApplicationName>oracle.apps.xxon.om.gbw.schctl.server.XXONGbwScheCtlAM</ApplicationName>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+   <ConnectionDefinition name="R1224PRD">
+      <ENTRY name="JDBC_PORT" value="1536"/>
+      <ENTRY name="ConnectionType" value="JDBC"/>
+      <ENTRY name="HOSTNAME" value="hlr122demo.global.triniti.com"/>
+      <ENTRY name="user" value="apps"/>
+      <ENTRY name="ConnectionName" value="R1224PRD"/>
+      <ENTRY name="SID" value="R1224PRD"/>
+      <ENTRY name="JdbcDriver" value="oracle.jdbc.OracleDriver"/>
+      <ENTRY name="password">
+         <![CDATA[{904}0531E63639BEC448D81EF2BA25F152AA5E]]>
+      </ENTRY>
+      <ENTRY name="ORACLE_JDBC_TYPE" value="thin"/>
+      <ENTRY name="DeployPassword" value="true"/>
+   </ConnectionDefinition>
+</BC4JConfig>

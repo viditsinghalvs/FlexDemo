@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE JboPackage SYSTEM "jbo_03_01.dtd">
+
+<JboPackage
+   Name="server"
+   SeparateXMLFiles="true"
+   PackageName="oracle.apps.xxon.om.gbw.baklogview.server" >
+   <DesignTime>
+      <Attr Name="_ejbPackage" Value="false" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+   </DesignTime>
+   <Containee
+      Name="XXONGbwBacklogViewAM"
+      FullName="oracle.apps.xxon.om.gbw.baklogview.server.XXONGbwBacklogViewAM"
+      ObjectType="AppModule" >
+   </Containee>
+   <Containee
+      Name="XXONGbwBaklogViewResultVO"
+      FullName="oracle.apps.xxon.om.gbw.baklogview.server.XXONGbwBaklogViewResultVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="XXONGbwGetRespKeyVO"
+      FullName="oracle.apps.xxon.om.gbw.baklogview.server.XXONGbwGetRespKeyVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="XXONGbwGetRlagFalgCountVO"
+      FullName="oracle.apps.xxon.om.gbw.baklogview.server.XXONGbwGetRlagFalgCountVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="XXONGbwRecordsDisplayVO"
+      FullName="oracle.apps.xxon.om.gbw.baklogview.server.XXONGbwRecordsDisplayVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="XXONGbwSearchCriteriaValuesVO"
+      FullName="oracle.apps.xxon.om.gbw.baklogview.server.XXONGbwSearchCriteriaValuesVO"
+      ObjectType="ViewObject" >
+   </Containee>
+</JboPackage>

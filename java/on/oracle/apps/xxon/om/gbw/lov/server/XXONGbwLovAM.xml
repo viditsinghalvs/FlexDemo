@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+
+<AppModule
+   Name="XXONGbwLovAM"
+   ComponentClass="oracle.apps.xxon.om.gbw.lov.server.XXONGbwLovAMImpl" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+      <Attr Name="_deployType" Value="0" />
+   </DesignTime>
+   <ViewUsage
+      Name="XXONGbwOperatingUnitLovVO1"
+      ViewObjectName="oracle.apps.xxon.om.gbw.lov.server.XXONGbwOperatingUnitLovVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="XXONGbwOpnLovVO1"
+      ViewObjectName="oracle.apps.xxon.om.gbw.lov.server.XXONGbwOpnLovVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="XXONGbwOmAuditTransactionTypeLovVO1"
+      ViewObjectName="oracle.apps.xxon.om.gbw.lov.server.XXONGbwOmAuditTransactionTypeLovVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="XXONGbwOmDemandTypeLovVO1"
+      ViewObjectName="oracle.apps.xxon.om.gbw.lov.server.XXONGbwOmDemandTypeLovVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="XXONGbwOmSchedulingMethodLovVO1"
+      ViewObjectName="oracle.apps.xxon.om.gbw.lov.server.XXONGbwOmSchedulingMethodLovVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="XXONGbwOmTransactionTypeLovVO1"
+      ViewObjectName="oracle.apps.xxon.om.gbw.lov.server.XXONGbwOmTransactionTypeLovVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="XXONGbwOmUserLovVO1"
+      ViewObjectName="oracle.apps.xxon.om.gbw.lov.server.XXONGbwOmUserLovVO" >
+   </ViewUsage>
+</AppModule>

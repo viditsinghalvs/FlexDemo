@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oa:listOfValues version="10.1.3_" xml:lang="en-US" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:ui="http://xmlns.oracle.com/uix/ui" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header$" amDefName="oracle.apps.xxon.om.gbw.lov.server.XXONGbwLovAM" scope="/">
+   <ui:contents>
+      <oa:table id="LovTable" blockSize="20" name="xxonOmUserLovRN">
+         <ui:contents>
+            <oa:messageStyledText id="UserID" dataType="VARCHAR2" prompt="User ID" viewName="XXONGbwOmUserLovVO1" viewAttr="UserId" maximumLength="255" sortState="yes" queryable="true"/>
+            <oa:messageStyledText id="UserName" dataType="VARCHAR2" prompt="User Name" viewName="XXONGbwOmUserLovVO1" viewAttr="UserName" maximumLength="255" sortState="yes" queryable="true"/>
+         </ui:contents>
+      </oa:table>
+   </ui:contents>
+</oa:listOfValues>

@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<package version="10.1.3_" xml:lang="en-US" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:ui="http://xmlns.oracle.com/uix/ui" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header$">
+   <attributeSet docName="date" prompt="History Date"/>
+   <attributeSet docName="itemdesc" prompt="Item Description"/>
+   <attributeSet docName="itemstatuscode" prompt="Item Status Code"/>
+   <attributeSet docName="ReleasedBy" prompt="Released By"/>
+   <attributeSet docName="ScheduledDemands" prompt="Scheduled Demands"/>
+   <attributeSet docName="ExcludeFR" prompt="Exclude FR"/>
+   <attributeSet docName="AppliedBy" prompt="Applied By"/>
+   <attributeSet docName="HoldReleaseDate" prompt="Hold Release Date"/>
+   <attributeSet docName="HoldReleaseReason" prompt="Hold Release Reason"/>
+   <attributeSet docName="HoldReleaseFlag" prompt="Hold Release Flag"/>
+   <attributeSet docName="HoldName" prompt="Hold Name"/>
+   <attributeSet docName="itemstatus" prompt="Item Status"/>
+   <attributeSet docName="soq" prompt="SOQ"/>
+   <attributeSet docName="poq" prompt="POQ"/>
+   <attributeSet docName="change" prompt="Change"/>
+   <attributeSet docName="sehedulingmethod" prompt="Scheduling Method"/>
+   <attributeSet docName="rsdfull" prompt="Request Ship Date (RSD)"/>
+   <attributeSet docName="ssdfull" prompt="Schedule Ship Date (SSD)"/>
+   <attributeSet docName="legacyso" prompt="Legacy SO"/>
+   <attributeSet docName="username" prompt="User Name"/>
+   <attributeSet docName="transactiontype" prompt="Transaction Type"/>
+   <attributeSet docName="datefrom" prompt="Ship From Date"/>
+   <attributeSet docName="dateto" prompt="Ship To Date"/>
+   <attributeSet docName="changeacceptance" prompt="Change Acceptance"/>
+   <attributeSet docName="linenumber" prompt="Line#"/>
+   <attributeSet docName="itemplaner" prompt="SCA"/>
+   <attributeSet docName="mpdate" prompt="Plan Date"/>
+   <attributeSet docName="splitflag" prompt="Split Flag"/>
+   <attributeSet docName="csr" prompt="CSR"/>
+   <attributeSet docName="schedulingreturn" prompt="SIR"/>
+   <attributeSet docName="cumulativeqty" prompt="Cumulative Qty"/>
+   <attributeSet docName="notifyid" prompt="Notify Id"/>
+   <attributeSet docName="lastupdatedate" prompt="Last Update Date"/>
+   <attributeSet docName="lastupdateby" prompt="Last Update By"/>
+   <attributeSet docName="sehedulemethod" prompt="Auto Schedule Method"/>
+   <attributeSet docName="mismatcheddemands" prompt="Mismatched Ship Dates"/>
+   <attributeSet docName="unscheduleddemands" prompt="Unscheduled Demands"/>
+   <attributeSet docName="replenisorders" prompt="Replenishment Orders"/>
+   <attributeSet docName="save" prompt="Save"/>
+   <attributeSet docName="go" prompt="Go"/>
+   <attributeSet docName="cancel" prompt="Cancel"/>
+   <attributeSet docName="clear" prompt="Clear"/>
+   <attributeSet docName="pkg" prompt="Pkg  Code"/>
+   <attributeSet docName="ok" prompt="Ok" scope="/"/>
+   <attributeSet docName="level" prompt="Level" scope="/"/>
+   <attributeSet docName="pal" prompt="PAL" scope="/"/>
+   <attributeSet docName="accountcorp" prompt="Corp Code"/>
+   <attributeSet docName="site" prompt="Cust5 Code"/>
+   <attributeSet docName="ordernumber" prompt="Order Number"/>
+   <attributeSet docName="demandbank" prompt="Demand Bank"/>
+   <attributeSet docName="coi" prompt="End Corp"/>
+   <attributeSet docName="updateddate" prompt="Last Updated Date"/>
+   <attributeSet docName="creationdate" prompt="Creation Date"/>
+   <attributeSet docName="consumption" prompt="Consumption Orders"/>
+   <attributeSet docName="samplesorders" prompt="Sample Orders"/>
+   <attributeSet docName="opunit" prompt="Operating Unit"/>
+   <attributeSet docName="leadtime" prompt="Lead Time"/>
+   <attributeSet docName="maxquantitylt" prompt="Max Quantity LT"/>
+   <attributeSet docName="mpq" prompt="MPQ"/>
+   <attributeSet docName="selectt" prompt="Select"/>
+   <attributeSet docName="mpn" prompt="MPN"/>
+   <attributeSet docName="custcd" prompt="Cust Cd"/>
+   <attributeSet docName="oraclecustcd" prompt="Oracle Cust Cd"/>
+   <attributeSet docName="orderhold" prompt="Order Hold"/>
+   <attributeSet docName="ordertype" prompt="Order Type"/>
+   <attributeSet docName="demandtype" prompt="Audit Level"/>
+   <attributeSet docName="orderNum" prompt="Order#"/>
+   <attributeSet docName="rsd" prompt="RSD"/>
+   <attributeSet docName="ssd" prompt="SSD"/>
+   <attributeSet docName="reschedulereason" prompt="Reschedule Reason"/>
+   <attributeSet docName="shipConfirmQuantity" prompt="Order Quantity"/>
+   <attributeSet docName="quantity" prompt="Quantity"/>
+   <attributeSet docName="peggingdetail" prompt="Pegging Detail"/>
+   <attributeSet docName="productcategory" prompt="Product Category"/>
+   <attributeSet docName="actionexpedtle" prompt="Action Expedtie"/>
+   <attributeSet docName="rsdssd" prompt="RSD=SSD"/>
+   <attributeSet docName="pti" prompt="PTI"/>
+   <attributeSet docName="poNumber" prompt="PO#"/>
+   <attributeSet docName="schrev" prompt="Schedule/Review"/>
+   <attributeSet docName="update" prompt="Update"/>
+   <attributeSet docName="searchbtn" prompt="Search"/>
+   <attributeSet docName="noofrowspage" prompt="No.of Rows per page"/>
+   <attributeSet docName="create" prompt="Create"/>
+   <attributeSet docName="opn" prompt="OPN"/>
+   <attributeSet docName="exportbutton" targetFrame="" text="Export"/>
+   <attributeSet docName="select" targetFrame="" text="Select"/>
+   <attributeSet docName="pickreference" prompt="Pick Reference"/>
+   <attributeSet docName="pickreleasedate" prompt="Pick Release Date"/>
+   <attributeSet docName="shipconfirmdate" prompt="Ship Confirm Date"/>
+   <attributeSet docName="invoicenumber" prompt="Invoice Number"/>
+   <attributeSet docName="daterange" prompt="Date Range"/>
+   <attributeSet docName="pendingorders" prompt="Pending Orders"/>
+   <attributeSet docName="linenum" prompt="Line Number"/>
+   <attributeSet docName="newrsd" prompt="New RSD"/>
+   <attributeSet docName="newquantity" prompt="New Quantity"/>
+   <attributeSet docName="changetype" prompt="Change Type"/>
+   <attributeSet docName="reject" prompt="Reject"/>
+   <attributeSet docName="exportBtn" prompt="Export"/>
+   <attributeSet docName="approve" prompt="Approve"/>
+   <attributeSet docName="rd" prompt="RD"/>
+   <attributeSet docName="sad" prompt="SAD"/>
+   <attributeSet docName="newrd" prompt="New RD"/>
+   <attributeSet docName="status" prompt="Status"/>
+   <attributeSet docName="updappr" prompt="Update/Approve"/>
+   <attributeSet docName="sourceAtt" prompt="Source"/>
+   <attributeSet docName="rushOrderFlag" prompt="Rush Order"/>
+   <attributeSet docName="AppliedDate" prompt="Applied Date"/>
+   <attributeSet docName="auditLevel" prompt="Level"/>
+   <attributeSet docName="attributeName" prompt="Attribute Name"/>
+   <attributeSet docName="oldAttributeValue" prompt="Old Value"/>
+   <attributeSet docName="historyFromDate" prompt="History From Date"/>
+   <attributeSet docName="legacyLineNumber" prompt="Legacy Line#"/>
+   <attributeSet docName="legacyOrderNumber" prompt="Legacy Order Number"/>
+   <attributeSet docName="historyToDate" prompt="History To Date"/>
+   <attributeSet docName="newAttributeValue" prompt="New Value"/>
+   <attributeSet docName="SsdResceduleCounter" prompt="SSD#"/>
+   <attributeSet docName="newssd" prompt="New SSD"/>
+   <attributeSet docName="dtype" prompt="DemandType"/>
+   <attributeSet docName="plannerId" prompt="Planner Id"/>
+</package>

@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE JboPackage SYSTEM "jbo_03_01.dtd">
+
+<JboPackage
+   Name="server"
+   SeparateXMLFiles="true"
+   PackageName="oracle.apps.xxon.om.gbw.lov.server" >
+   <DesignTime>
+      <Attr Name="_ejbPackage" Value="false" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+   </DesignTime>
+   <Containee
+      Name="XXONGbwCancelReasonCodeVO"
+      FullName="oracle.apps.xxon.om.gbw.lov.server.XXONGbwCancelReasonCodeVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="XXONGbwCorpCodeLovVO"
+      FullName="oracle.apps.xxon.om.gbw.lov.server.XXONGbwCorpCodeLovVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="XXONGbwCust5CodeLovVO"
+      FullName="oracle.apps.xxon.om.gbw.lov.server.XXONGbwCust5CodeLovVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="XXONGbwDemandBankLovVO"
+      FullName="oracle.apps.xxon.om.gbw.lov.server.XXONGbwDemandBankLovVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="XXONGbwLovAM"
+      FullName="oracle.apps.xxon.om.gbw.lov.server.XXONGbwLovAM"
+      ObjectType="AppModule" >
+   </Containee>
+   <Containee
+      Name="XXONGbwOmAuditTransactionTypeLovVO"
+      FullName="oracle.apps.xxon.om.gbw.lov.server.XXONGbwOmAuditTransactionTypeLovVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="XXONGbwOmDemandTypeLovVO"
+      FullName="oracle.apps.xxon.om.gbw.lov.server.XXONGbwOmDemandTypeLovVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="XXONGbwOmSchedulingMethodLovVO"
+      FullName="oracle.apps.xxon.om.gbw.lov.server.XXONGbwOmSchedulingMethodLovVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="XXONGbwOmTransactionTypeLovVO"
+      FullName="oracle.apps.xxon.om.gbw.lov.server.XXONGbwOmTransactionTypeLovVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="XXONGbwOmUserLovVO"
+      FullName="oracle.apps.xxon.om.gbw.lov.server.XXONGbwOmUserLovVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="XXONGbwOperatingUnitLovVO"
+      FullName="oracle.apps.xxon.om.gbw.lov.server.XXONGbwOperatingUnitLovVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="XXONGbwOpnLovVO"
+      FullName="oracle.apps.xxon.om.gbw.lov.server.XXONGbwOpnLovVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="XXONGbwPackageLovVO"
+      FullName="oracle.apps.xxon.om.gbw.lov.server.XXONGbwPackageLovVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="XXONGbwPtiLovVO"
+      FullName="oracle.apps.xxon.om.gbw.lov.server.XXONGbwPtiLovVO"
+      ObjectType="ViewObject" >
+   </Containee>
+</JboPackage>

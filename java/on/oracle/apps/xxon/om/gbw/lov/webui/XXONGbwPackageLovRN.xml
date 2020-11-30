@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oa:listOfValues version="10.1.3_" xml:lang="en-US" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:ui="http://xmlns.oracle.com/uix/ui" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header$" scope="/">
+   <ui:contents>
+      <oa:table name="XXONGbwPackageLovRN" id="XXONGbwPackageLovRN">
+         <ui:contents>
+            <oa:messageStyledText id="PkgCode" dataType="VARCHAR2" prompt="Package Code" viewName="XXONGbwPackageLovVO1" viewAttr="PkgCode" queryable="true"/>
+            <oa:formValue id="PkgGroupCode" viewName="XXONGbwPackageLovVO1" viewAttr="PkgGroupCode" prompt="Package Group Code" queryable="false"/>
+            <oa:formValue id="InventoryItemId" dataType="NUMBER" prompt="InventoryItemId" viewName="XXONGbwPackageLovVO1" viewAttr="InventoryItemId"/>
+            <oa:formValue id="Item" dataType="VARCHAR2" prompt="Item" viewName="XXONGbwPackageLovVO1" viewAttr="Item" queryable="false"/>
+         </ui:contents>
+      </oa:table>
+   </ui:contents>
+</oa:listOfValues>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oa:header version="10.1.3_" xml:lang="en-US" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:ui="http://xmlns.oracle.com/uix/ui" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header$" amDefName="oracle.apps.xxon.om.gbw.popup.server.XXONGbwPopupAM" scope="/" controllerClass="oracle.apps.xxon.om.gbw.popup.webui.XXONGbwOrderHoldDetlPopupCO">
+   <ui:contents>
+      <oa:table id="XXONGbwOrderHoldDetailsVO1">
+         <ui:contents>
+            <oa:messageStyledText id="HoldName" dataType="VARCHAR2" viewName="XXONGbwOrderHoldDetailsVO1" viewAttr="HoldName" maximumLength="240" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/HoldName"/>
+            <oa:messageStyledText id="AppliedBy" viewName="XXONGbwOrderHoldDetailsVO1" viewAttr="AppliedBy" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/AppliedBy"/>
+            <oa:messageStyledText id="AppliedDate" viewName="XXONGbwOrderHoldDetailsVO1" viewAttr="AppliedDate" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/AppliedDate"/>
+            <oa:messageStyledText id="HoldReleaseFlag" dataType="VARCHAR2" viewName="XXONGbwOrderHoldDetailsVO1" viewAttr="HoldReleaseFlag" maximumLength="1" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/HoldReleaseFlag"/>
+            <oa:messageStyledText id="RealedBy" viewName="XXONGbwOrderHoldDetailsVO1" viewAttr="ReleasedBy" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/ReleasedBy"/>
+            <oa:messageStyledText id="HoldReleaseDate" dataType="DATE" viewName="XXONGbwOrderHoldDetailsVO1" viewAttr="HoldReleaseDate" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/HoldReleaseDate"/>
+            <oa:messageStyledText id="HoldReleaseReason" dataType="VARCHAR2" viewName="XXONGbwOrderHoldDetailsVO1" viewAttr="HoldReleaseReason" maximumLength="30" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/HoldReleaseReason"/>
+         </ui:contents>
+      </oa:table>
+      <oa:rowLayout id="region1" hAlign="center">
+         <ui:contents>
+            <oa:button id="CloseWindowBT" destination="javascript:top.closeit();" use="/oracle/apps/xxon/om/gbw/attributesets/XXONGbwBaklogVAttributes/ok"/>
+         </ui:contents>
+      </oa:rowLayout>
+   </ui:contents>
+</oa:header>

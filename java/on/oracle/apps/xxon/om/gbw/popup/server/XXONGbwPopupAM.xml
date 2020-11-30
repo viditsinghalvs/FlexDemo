@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+
+<AppModule
+   Name="XXONGbwPopupAM"
+   ComponentClass="oracle.apps.xxon.om.gbw.popup.server.XXONGbwPopupAMImpl" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+      <Attr Name="_deployType" Value="0" />
+   </DesignTime>
+   <ViewUsage
+      Name="XXONGbwOpnItemDetailsVO1"
+      ViewObjectName="oracle.apps.xxon.om.gbw.popup.server.XXONGbwOpnItemDetailsVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="XXONGbwOrderHoldDetailsVO1"
+      ViewObjectName="oracle.apps.xxon.om.gbw.popup.server.XXONGbwOrderHoldDetailsVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="XXONGbwCustomerDetailsVO1"
+      ViewObjectName="oracle.apps.xxon.om.gbw.popup.server.XXONGbwCustomerDetailsVO" >
+   </ViewUsage>
+</AppModule>
